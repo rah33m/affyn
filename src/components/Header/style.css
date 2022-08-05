@@ -1,0 +1,126 @@
+.header {
+  height: 100vh;
+  max-height: 1073px;
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  background: transparent url("../../../public/images/background.png") no-repeat
+    padding-box;
+  background-position: 50% 100%;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: max-content;
+  width: full;
+  max-width: 1260px;
+  margin: 120px auto 0px auto;
+  padding: 0px 25px;
+}
+
+.heading h1 {
+  font-size: 2rem;
+  letter-spacing: 0px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.heading span {
+  font-family: Copperplate;
+  color: #84fbfd;
+  display: block;
+  letter-spacing: 6.4px;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.heading p {
+  font-size: 18px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.mobile_pointer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: auto;
+  width: max-content;
+}
+
+.mouse_shape {
+  width: 34px;
+  height: 55px;
+  border: 2px solid #a2a2ab;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.mouse_shape::before {
+  margin-top: 6px;
+  content: "";
+  display: block;
+  height: 20px;
+  width: 4.5px;
+  border-radius: 10px;
+  background-color: #a2a2ab;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10%);
+  }
+}
+
+.mobile_pointer svg {
+  color: white;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  position: relative;
+  z-index: -1;
+  animation: bounce 1s ease infinite alternate;
+}
+
+@media (min-width: 768px) {
+  .mobile_pointer {
+    display: none;
+  }
+  .header {
+    background-position: 0% 100%;
+  }
+
+  .heading {
+    margin-top: 200px;
+  }
+
+  .heading h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: start;
+  }
+
+  .heading span {
+    color: #84fbfd;
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+
+  .heading p {
+    font-size: 24px;
+    line-height: 1.1;
+    text-align: start;
+  }
+}

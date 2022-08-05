@@ -1,0 +1,9 @@
+.page_container {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+main {
+  padding: 0px 16px;
+}

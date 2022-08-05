@@ -1,0 +1,145 @@
+.faq_container {
+  color: white;
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq_container h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0px 25px;
+}
+
+.faq_container p {
+  font-size: 18px;
+  max-width: 670px;
+  text-align: center;
+  padding: 0px 24px;
+  line-height: 1.2;
+}
+
+.faqs {
+  margin-top: 50px;
+  border-top: 1.5px solid #ffffff60;
+}
+
+.faq-item {
+  padding: 24px 0px;
+  border-bottom: 1.5px solid #ffffff60;
+}
+
+.faq-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0px 12px;
+}
+
+.faq-number {
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 700;
+}
+
+.faq-header h3 {
+  margin: 0;
+  width: 85%;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.faq-header-icon {
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.faq-header-icon::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background-color: #ffffff;
+  transform: translateY(0%);
+  transition: all ease 300ms;
+}
+
+.isOpen.faq-header-icon::before {
+  transform: translateY(200%);
+}
+
+.faq-header-icon::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 24px;
+  width: 4px;
+  background-color: #ffffff;
+  transform: rotate(90deg);
+}
+
+.faq-content {
+  margin: auto;
+  padding-top: 16px;
+  overflow: hidden;
+  transition: all ease 300ms;
+  padding-left: 10%;
+}
+
+.faq_container .faq-content p {
+  text-align: start;
+  font-size: 15px;
+  line-height: 18px;
+  display: inline-block;
+  width: 100%;
+  max-width: 85%;
+  margin: 0;
+}
+
+.hidden.faq-content {
+  padding-top: 0px;
+  height: 0;
+}
+
+@media (min-width: 786px) {
+  .faq_container {
+    margin-top: 100px;
+  }
+  .faq-header {
+    gap: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0px 20px;
+  }
+  .faq-number {
+    font-size: 38px;
+  }
+  .faq-header h3 {
+    width: 85%;
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .faq-content {
+    padding-left: 8%;
+  }
+
+  .faq_container p {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
