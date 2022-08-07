@@ -50,16 +50,18 @@
   animation-direction: alternate-reverse;
 }
 
-.nft_img:hover,
-.nft_img:active {
-  transform: translateY(-50px);
+@media (hover: hover) {
+  .nft_img:hover,
+  .nft_img:active {
+    transform: translateY(-50px);
+  }
 }
 
 /* NFT controls */
 
 .controls_position {
   position: absolute;
-  bottom: 0%;
+  bottom: -20%;
   left: 50%;
   transform: translateX(-50%);
 }

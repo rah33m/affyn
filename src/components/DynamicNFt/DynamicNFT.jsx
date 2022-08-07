@@ -18,7 +18,7 @@ export const DynamicNFT = () => {
       setZoom((state) => state - 0.05);
     }
   };
-  //  rotate nft
+  //  Rotate nft
   useEffect(() => {
     if (rotate) {
       setTimeout(() => {
