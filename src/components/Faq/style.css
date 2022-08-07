@@ -11,7 +11,7 @@
 }
 
 .faq_container h2 {
-  font-size: 5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   margin: 0;
   padding: 0px 25px;
@@ -118,6 +118,9 @@
 @media (min-width: 786px) {
   .faq_container {
     margin-top: 100px;
+  }
+  .faq_container h2 {
+    font-size: 5rem;
   }
   .faq-header {
     gap: 30px;
