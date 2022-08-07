@@ -15,7 +15,7 @@
   color: white;
   height: max-content;
   width: full;
-  max-width: 1260px;
+  max-width: 1280px;
   margin: 120px auto 0px auto;
   padding: 0px 25px;
 }
@@ -53,6 +53,9 @@
   gap: 8px;
   margin: auto;
   width: max-content;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .mouse_shape {
@@ -93,7 +96,7 @@
   animation: bounce 1s ease infinite alternate;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 786px) {
   .mobile_pointer {
     display: none;
   }
@@ -122,5 +125,10 @@
     font-size: 24px;
     line-height: 1.1;
     text-align: start;
+  }
+}
+@media (max-width: 1286px) {
+  .heading {
+    margin: 25px;
   }
 }

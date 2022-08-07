@@ -50,7 +50,8 @@
   animation-direction: alternate-reverse;
 }
 
-.nft_img:hover {
+.nft_img:hover,
+.nft_img:active {
   transform: translateY(-50px);
 }
 
@@ -125,6 +126,7 @@
 
 .rotate_icon {
   color: #84fbfd;
+  padding: 0 20px;
 }
 
 @media (min-width: 786px) {

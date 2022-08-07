@@ -20,12 +20,17 @@ export const Header = () => {
           bibendum.
         </p>
       </div>
-      <a className="mobile_pointer" href="#dynamic_nft">
+      <button
+        className="mobile_pointer"
+        onClick={() => {
+          document.querySelector("#dynamic_nft").scrollIntoView();
+        }}
+      >
         <div className="mouse_shape">
           <span />
         </div>
         <IoMdArrowDown />
-      </a>
+      </button>
     </header>
   );
 };
