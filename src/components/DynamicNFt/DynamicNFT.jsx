@@ -5,18 +5,20 @@ import "./style.css";
 export const DynamicNFT = () => {
   const [rotate, setRotate] = useState(false);
   const [zoom, setZoom] = useState(1);
+
+  // Zoom in
   const handleZoomIn = () => {
     if (zoom < 1.0) {
       setZoom((state) => state + 0.05);
     }
   };
-
+  // Zoom out
   const handleZoomOut = () => {
     if (zoom > 0.5) {
       setZoom((state) => state - 0.05);
     }
   };
-
+  //  rotate nft
   useEffect(() => {
     if (rotate) {
       setTimeout(() => {
